@@ -17,7 +17,7 @@ joblib==1.6.0
 threadpoolctl==3.7.0
 
 # Shtresa web. Vetem transport: validim, serializim dhe hartë gabimesh.
-fastapi==0.161.1
+fastapi==0.162.0
 uvicorn==0.54.0
 pydantic==2.14.1
 
@@ -26,7 +26,7 @@ pydantic==2.14.1
 # `anyio.abc.BlockingPortal` qe starlette e prek gjate importit: paralajmerimi
 # behet gabim nen `filterwarnings = error` dhe CI-ja u prish pa ndryshuar asnje
 # rresht kodi. Nje mjedis "plotesisht i percaktuar" i perfshin edhe keto.
-starlette==1.9.0
+starlette==1.10.0
 anyio==4.15.1
 idna==3.20
 annotated-doc==0.0.5
