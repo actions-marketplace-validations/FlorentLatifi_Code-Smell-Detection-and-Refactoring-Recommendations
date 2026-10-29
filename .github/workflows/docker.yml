@@ -40,7 +40,7 @@ jobs:
     # E fiksuar për të njëjtën arsye si puna e2e te `ci.yml` (VD-154, VD-156).
     runs-on: ${{ matrix.runner }}
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v3.7.0
 
       # Emri i imazhit në ghcr.io duhet me shkronja të vogla, ndërsa emri i depos
       # nuk është.
