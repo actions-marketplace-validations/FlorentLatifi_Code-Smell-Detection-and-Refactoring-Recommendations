@@ -25,7 +25,7 @@ COPY backend/javasmell/glossary/plain_sq.json /app/backend/javasmell/glossary/
 RUN npm run build
 
 # --- 2. Varësitë Python, të përbashkëta për trajnimin dhe për imazhin ------------
-FROM python:3.13-slim@sha256:d98cc29d3266e535dd9da1099688d9cb3ca4753813571e071763d17725460962 AS python
+FROM python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90 AS python
 WORKDIR /app
 COPY backend/requirements.txt backend/requirements.txt
 # Dosjet `tests` të bibliotekave (rreth 60 MB, kryesisht të SciPy-së) nuk importohen
