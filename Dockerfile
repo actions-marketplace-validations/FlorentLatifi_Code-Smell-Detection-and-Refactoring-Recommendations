@@ -40,7 +40,7 @@ RUN pip install --no-cache-dir -r backend/requirements.txt \
 # `lib/ct.sym`, që mbeten të paprekura: verdikti i kompilimit nuk ndryshon. Një JDK
 # i ngushtuar me jlink do të ishte më i vogël, por do të ndryshonte cilat API i
 # sheh javac-u, pra edhe verdiktet (VD-158).
-FROM eclipse-temurin:21-jdk@sha256:23cc5734ff46e776f51ce66eb9ee08444fd47caabec0a95b7eb6e94be2d3696d AS jdk
+FROM eclipse-temurin:21-jdk@sha256:8ad118b146aa92da815b576441acd6b42b38236797ad0b6edc8c200b85bb0734 AS jdk
 RUN rm -rf /opt/java/openjdk/jmods /opt/java/openjdk/man /opt/java/openjdk/lib/src.zip
 
 # --- 3. Modelet: trajnohen nga tabela e komituar, si te README-ja ----------------
